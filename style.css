@@ -12,17 +12,55 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
 }
 
-/* .logo {
-    margin: 70px 0 50px 0;
-} */
+.logo {
+    margin: 60px 0 40px 0;
+}
+
+.tag-name {
+    font-size: 3rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+#emailAddress {
+    font-size: 1.1rem;
+    width: 420px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 1px solid hsl(0, 0%, 59%);
+    margin-right: 10px;
+}
+
+#button {
+    font-size: 1.1rem;
+    width: 200px;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#button:hover {
+    background-color: hsl(223, 87%, 63%, 0.8);
+}
+
 
 .tag-name {
     font-weight: 300;
@@ -34,6 +72,103 @@ body {
     color:  hsl(209, 33%, 12%);
 }
 
-footer {
+
+/* email error */
+
+#emailEmpty {
     display: none;
+    position: absolute;
+    font-size: 0.6em;
+    margin: 5px 0 0 35px;
+    
+}
+
+#emailEmpty.visible {
+    display: block;
+    color: rgb(255, 0, 0);
+    font-style: italic;
+}
+
+#emailAddress.invalid {
+    border-color: rgb(255, 0, 0);
+}
+
+/*  image illustration dashboard */
+.dashboard {
+    width: 625px;
+    margin-top: 80px;
+}
+
+footer {
+    /* outline: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.social:hover {
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 50%;
+
+}
+
+.social:hover .icon {
+    filter: brightness(0) invert(1);
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid hsla(0, 0%, 59%, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+a > img {
+    width: 20px;
+}
+
+.footer-para {
+    font-size: .7em;
+    margin-top: 20px;
+}
+
+@media (width <= 650px) {
+    body {
+        background-color: pink;
+    }
+
+    .tag-name {
+        font-size: 2rem;
+    }
+
+    .subscribe {
+        font-size: 1.1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #emailEmpty {
+        position: relative;
+        bottom: 100px;
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+
+    #button {
+        width: 420px;
+        margin-top: 50px;
+    }
 }

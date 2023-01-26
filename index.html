@@ -11,25 +11,28 @@
 <body>
     <img src="./images/logo.svg" class="logo" alt="website logo'ping'">
     <h1 class="tag-name">We are launching <span>soon!</span></h1>
-    <p>Subscribe and get notified</p>
+    <p class="subscribe">Subscribe and get notified</p>
     <form>
         <input type="text" id="emailAddress" name="emailaddress" placeholder="Your email addresss...">
-        <input type="submit" value="Notife Me">
+        <input type="submit" value="Notife Me" id="button">
+        <p role="alert" id="emailEmpty" aria-hidden="true">
+            Please provide a valid email address
+        </p>
     </form>
-    <img src="./images/illustration-dashboard.png" alt="illustration dashboard">
+    <img src="./images/illustration-dashboard.png" class="dashboard" alt="illustration dashboard">
     <footer>
         <div class="socials">
             <div class="social">
-                <img src="./images/facebook-svgrepo-com.svg" alt="facebook logo">
+                <a href="#"><img src="./images/facebook-svgrepo-com.svg" class="icon" alt="facebook logo"></a>
             </div>
             <div class="social">
-                <img src="./images/twitter-svgrepo-com.svg" alt="twitter logo">
+                <a href="#"><img src="./images/twitter-svgrepo-com.svg" class="icon" alt="twitter logo"></a>
             </div>
             <div class="social">
-                <img src="./images/instagram-svgrepo-com.svg" alt="instagram logo">
+                <a href="#"><img src="./images/instagram-svgrepo-com.svg" class="icon" alt="instagram logo"></a>
             </div>
         </div>
-        <p>&#169;Copyright Ping. All right reserved.</p> 
+        <p class="footer-para">&#169;Copyright Ping. All right reserved.</p> 
     </footer>
 </body>
 </html>
